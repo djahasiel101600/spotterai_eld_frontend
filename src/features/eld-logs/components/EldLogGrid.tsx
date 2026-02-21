@@ -575,6 +575,99 @@ const EldLogGrid: React.FC<EldLogGridProps> = ({
                     {carrier.homeTerminalAddress}
                   </Typography>
                 </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    borderBottom: "1px solid black",
+                    position: "relative",
+                    pt: 1,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "7px",
+                      fontWeight: "bold",
+                      textTransform: "uppercase",
+                      textAlign: "right",
+                      position: "absolute",
+                      top: -4,
+                      right: 0,
+                      opacity: 0.7,
+                    }}
+                  >
+                    Driver Name
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      pb: 0.5,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {carrier.driverName || "—"}
+                  </Typography>
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    borderBottom: "1px solid black",
+                    position: "relative",
+                    pt: 1,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "7px",
+                      fontWeight: "bold",
+                      textTransform: "uppercase",
+                      textAlign: "right",
+                      position: "absolute",
+                      top: -4,
+                      right: 0,
+                      opacity: 0.7,
+                    }}
+                  >
+                    Driver&apos;s Signature / Certification
+                  </Typography>
+                  <Box sx={{ height: "20px", pb: 0.5 }} />
+                </Box>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    borderBottom: "1px solid black",
+                    position: "relative",
+                    pt: 1,
+                  }}
+                >
+                  <Typography
+                    sx={{
+                      fontSize: "7px",
+                      fontWeight: "bold",
+                      textTransform: "uppercase",
+                      textAlign: "right",
+                      position: "absolute",
+                      top: -4,
+                      right: 0,
+                      opacity: 0.7,
+                    }}
+                  >
+                    Name of Co-driver
+                  </Typography>
+                  <Typography
+                    sx={{
+                      fontSize: "12px",
+                      fontWeight: 600,
+                      pb: 0.5,
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {carrier.coDriverName || "—"}
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Grid>

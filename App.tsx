@@ -143,6 +143,7 @@ const App: React.FC = () => {
     homeTerminalAddress: "456 Terminal Dr, Los Angeles, CA 90001",
     truckNumber: "TRK-900 / TRL-442",
     shippingDocs: "MANIFEST #88219-X",
+    coDriverName: "",
   });
 
   const [showSettings, setShowSettings] = useState<"HOS" | "CARRIER" | null>(

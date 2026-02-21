@@ -100,6 +100,7 @@ export interface CarrierInfo {
   homeTerminalAddress: string;
   truckNumber: string;
   shippingDocs: string;
+  coDriverName?: string;
 }
 
 export interface TripInputs {

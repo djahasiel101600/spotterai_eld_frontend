@@ -178,6 +178,7 @@ const NewTripPage: React.FC<NewTripPageProps> = ({
       homeTerminalAddress: "251 Little Falls Dr. Wilmington DE 19808",
       truckNumber: "TRK-900 / TRL-442",
       shippingDocs: "MANIFEST #88219-X",
+      coDriverName: "",
     },
   });
 
@@ -257,6 +258,7 @@ const NewTripPage: React.FC<NewTripPageProps> = ({
           homeTerminalAddress: formData.homeTerminalAddress,
           truckNumber: formData.truckNumber,
           shippingDocs: formData.shippingDocs,
+          coDriverName: formData.coDriverName ?? "",
         },
         hosConfig: hosConfig,
         homeTerminalTimezone: homeTerminalTimezone,
@@ -284,6 +286,7 @@ const NewTripPage: React.FC<NewTripPageProps> = ({
           homeTerminalAddress: formData.homeTerminalAddress,
           truckNumber: formData.truckNumber,
           shippingDocs: formData.shippingDocs,
+          coDriverName: formData.coDriverName ?? "",
         },
         intel: data.intel,
         timezone: homeTerminalTimezone,  // Include timezone for proper display
@@ -701,6 +704,29 @@ const NewTripPage: React.FC<NewTripPageProps> = ({
                                           />
                                         </InputAdornment>
                                       ),
+                                    }}
+                                    sx={{
+                                      "& .MuiOutlinedInput-root": {
+                                        borderRadius: 2,
+                                      },
+                                    }}
+                                  />
+                                )}
+                              />
+                            </Grid>
+                            <Grid size={{ xs: 12, md: 6 }}>
+                              <Controller
+                                name="coDriverName"
+                                control={control}
+                                render={({ field }) => (
+                                  <TextField
+                                    {...field}
+                                    fullWidth
+                                    label="Name of Co-driver (optional)"
+                                    variant="outlined"
+                                    onChange={(e) => {
+                                      field.onChange(e);
+                                      if (error) setError(null);
                                     }}
                                     sx={{
                                       "& .MuiOutlinedInput-root": {
