@@ -1,0 +1,7 @@
+{
+  "name": "RouteLog Pro: Trip & ELD Planner",
+  "description": "An advanced route optimization and Electronic Logging Device (ELD) log generator. Plan routes, calculate HOS-compliant breaks, and generate daily driver logs automatically.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
