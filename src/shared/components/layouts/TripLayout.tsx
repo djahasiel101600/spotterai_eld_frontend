@@ -133,7 +133,7 @@ const TripLayout: React.FC<TripLayoutProps> = ({
 
       {/* Main Content */}
       <Container maxWidth={maxWidth} sx={{ flex: 1, py: 4 }}>
-        /* {children} */
+        {/* {children} */}
         <Typography component="h1" variant="h4">
           This Web App Is No Longer Available
         </Typography>
