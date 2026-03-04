@@ -127,7 +127,7 @@ const TripLayout: React.FC<TripLayoutProps> = ({
           </Stack>
 
           {/* Action Buttons */}
-          {actions && <Box>{actions}</Box>}
+          {/* {actions && <Box>{actions}</Box>} */}
         </Toolbar>
       </AppBar>
 
